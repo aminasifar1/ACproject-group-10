@@ -5,3 +5,5 @@
 
 ## Preguntas Semana 1
 
+1. Cargar, limpiar y preparar los datos. Que
+2. Convertir texto a caracteristicas
