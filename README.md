@@ -7,3 +7,12 @@
 
 1. Cargar, limpiar y preparar los datos. Que
 2. Convertir texto a caracteristicas
+3. Entrenar un modelo de clasificación
+4. Comparar diferentes modelos en los mismos datos
+
+### Respuestas
+1. Simplificamos datos hasta tener solo 2 columnas: `overall` y `reviewtext`. Luego, eliminamos filas con valores nulos.
+2. Utilizamos una funcion llamada clean_text hecha por nosotros para limpiar el texto. Luego, utilizamos TfidfVectorizer para convertir texto a caracteristicas.
+3. Utilizamos un modelo de clasificación llamado `LogisticRegression` para entrenar el modelo. Tambien entrenamos de inicio con `RandomForestClassifier`, que consideramos seria el que tendria mejor funcionamiento antes de hacer pruebas
+4. Ejecutamos muchos modelos diferentes y comparamos las matrices de confusion y la roc curve para determinar cual modelo es mejor. En este caso, el modelo `LogisticRegression` fue el mejor en un sistema de puntaje binario. Tenemos la idea de hacer pruebas prediciendo el valor exacto de cada review para la semana que viene
+## Preguntas Semana 2
